@@ -2,13 +2,13 @@
 
 public class BudgetController : Controller
 {
-    // GET: Light Saver
+
     public ActionResult LightSaver()
     {
         return View();
     }
 
-    // POST: Light Saver
+
     [HttpPost]
     public ActionResult LightSaver(decimal amount)
     {
@@ -30,7 +30,7 @@ public class BudgetController : Controller
         return View();
     }
 
-    // Similarly for Saver and HeavySaver
+    //HeavySaver
     public ActionResult Saver()
     {
         return View();
@@ -64,7 +64,7 @@ public class BudgetController : Controller
     [HttpPost]
     public ActionResult HeavySaver(decimal amount)
     {
-        // Define allocation percentages for Heavy Saver
+        //Saver
         var expensePercentage = 0.50m; // 50% for expenses
         var savingsPercentage = 0.40m; // 40% for savings
         var leisurePercentage = 0.10m; // 10% for leisure
