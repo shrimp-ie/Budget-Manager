@@ -1,8 +1,39 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<div class="container text-center mt-5">
+    <h1>Welcome to the Budgeting App</h1>
+    <p>Select a savings plan that suits your needs:</p>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="row mt-4">
+        <!-- Light Saver Option -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Light Saver</h4>
+                    <p class="card-text">For those who prefer gradual savings with minimal restrictions.</p>
+                    <a href="@Url.Action("LightSaver", "Budget")" class="btn btn-primary">Select</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Saver Option -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Saver</h4>
+                    <p class="card-text">A balanced approach to saving, ideal for moderate goals.</p>
+                    <a href="@Url.Action("Saver", "Budget")" class="btn btn-primary">Select</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Heavy Saver Option -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Heavy Saver</h4>
+                    <p class="card-text">Maximize your savings quickly with tighter control over spending.</p>
+                    <a href="@Url.Action("HeavySaver", "Budget")" class="btn btn-primary">Select</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
