@@ -31,7 +31,7 @@ Myles
 
 
 
-**Home page **
+**Home Page**
 
 Cadell
 
